@@ -1,0 +1,55 @@
+body{
+    height: 200px;
+    padding: 50px 0;
+    background: #cccccc;
+}
+
+.search {
+    font-family: arial;
+    padding: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid grey;
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    font-family: arial;
+}
+
+td {border: 1px solid grey;}
+
+table {border: 3px solid grey;}
+
+.button {
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background: rgb(53, 167, 110);
+    cursor: pointer;
+}
+
+#searchButton {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: radial-gradient(farthest-side ellipse at top left, white, #aaaaaa);
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.3), -5px -10px 20px rgba(255,255,255,0.5);
+}
+
+#resetButton {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: radial-gradient(farthest-side ellipse at top left, white, #aaaaaa);
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.3), -5px -10px 20px rgba(255,255,255,0.5);
+}
+
+#searchText {
+    width: 30%;
+}
