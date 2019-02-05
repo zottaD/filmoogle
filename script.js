@@ -11,6 +11,7 @@ $(document).ready(function () {
 
     $('#searchText').keypress(function(e){
         if(e.which == 13){
+//             move code duplicates to separete function (line 3-9)
             var searchText = $('#searchText').val();
             if(searchText.length > 0){
                 ajaxReuest(searchText);
@@ -40,7 +41,8 @@ function ajaxReuest(term){
                 valFilm.backdrop_path = '<img src="'+urls+ valFilm.backdrop_path+'" />';
 
                 var $filmTable=$('<table class="table" align="center"></table>');
-
+//        it would be good to make film presentation more user friendly (not a table with attr names and values)
+//           example https://www.themoviedb.org/search?query=home&language=en-US      
                 $.each(valFilm, function(keyAttr, valAttr)
                 {
                     var $filtAttrTr=$('<tr><td>' + keyAttr + '</td><td>' + valAttr  + '</td></tr>');
